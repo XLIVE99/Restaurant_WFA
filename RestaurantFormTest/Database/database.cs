@@ -18,6 +18,12 @@ namespace RestaurantFormTest.Database
         {
             if (instance == null)
                 instance = this;
+
+            if (string.IsNullOrEmpty(Properties.Settings.Default.Save_location))
+            {
+                Properties.Settings.Default.Save_location = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                Properties.Settings.Default.Save();
+            }
         }
 
         public static database instance;
@@ -28,6 +34,7 @@ namespace RestaurantFormTest.Database
         #region Save operations
         public void SaveTables()
         {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             WriteToXmlFile(Properties.Settings.Default.Save_location + "/tables.xml", tables);
             Console.WriteLine("Tables saved!");
         }
