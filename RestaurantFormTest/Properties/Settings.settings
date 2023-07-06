@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RestaurantFormTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Save_location" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\</Value>
+    </Setting>
+    <Setting Name="Table_Prefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Table_</Value>
+    </Setting>
+    <Setting Name="Rest_Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Restaurant</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
